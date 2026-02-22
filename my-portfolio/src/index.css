@@ -1,0 +1,24 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Full dark background */
+body {
+  background: #f8fafc;
+  font-family: system-ui, sans-serif;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+:root {
+  --primary: #2563eb; /* blue */
+}
