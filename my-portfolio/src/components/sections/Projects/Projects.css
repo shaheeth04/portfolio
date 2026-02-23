@@ -1,124 +1,94 @@
-/* .projects {
-  padding: 80px 10%;
-  background: #0f172a;
-  color: white;
-}
-
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.project-card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 12px;
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  background: #334155;
-}
-
-.project-card h3 {
-  margin-bottom: 10px;
-}
-.badge {
-  background: #38bdf8;
-  color: black;
-  font-size: 0.7rem;
-  padding: 4px 8px;
-  border-radius: 5px;
-  display: inline-block;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-.tech {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #38bdf8;
-}
-// */
+/* ===============================
+   PROJECTS SECTION (LIGHT THEME)
+================================ */
 .projects {
-  padding: 80px 20px;
-  background: #020617;
-  color: #e5e7eb;
+  padding: 90px 20px;
+  background: linear-gradient(
+    to bottom,
+    #f3ece5 0%,
+    #f7f4ef 100%
+  );
+  color: #1f2937;
   text-align: center;
 }
 
 /* Title */
 .section-title {
-  font-size: 2rem;
-  margin-bottom: 50px;
-  color: #38bdf8;
+  font-size: 2.1rem;
+  margin-bottom: 55px;
+  color: #ff6a00;
+  font-weight: 700;
 }
 
-/* GRID MAGIC (Auto responsive) */
+/* Container - Updated to Flexbox for centering odd cards */
 .projects-container {
   max-width: 1200px;
   margin: auto;
-  display: grid;
-
-  /* 👇 THIS MAKES IT FUTURE PROOF */
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* This centers the last card if it's alone */
+  gap: 28px;
 }
 
-/* Project Card */
+/* ===============================
+   PROJECT CARD
+================================ */
 .project-card {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 12px;
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 14px;
   text-align: left;
-  transition: 0.25s ease;
-  border: 1px solid transparent;
+  border: 1px solid #e7e5e4;
+  
+  /* Flex settings to maintain card size */
+  flex: 1 1 320px; 
+  max-width: 400px; 
+
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
+/* Hover Effect */
 .project-card:hover {
   transform: translateY(-6px);
-  border-color: #38bdf8;
-  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+  border-color: #ff6a00;
+  box-shadow: 0 12px 30px rgba(255, 106, 0, 0.12);
 }
 
 /* Badge */
 .badge {
-  background: #38bdf8;
-  color: black;
-  font-size: 0.7rem;
-  padding: 4px 8px;
-  border-radius: 5px;
+  background: rgba(255, 106, 0, 0.12);
+  color: #ff6a00;
+  font-size: 0.72rem;
+  padding: 5px 9px;
+  border-radius: 6px;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: 600;
 }
 
-/* Title */
+/* Title inside card */
 .project-card h3 {
   margin-bottom: 10px;
-  color: #f1f5f9;
+  color: #1f2937;
+  font-size: 1.05rem;
+  font-weight: 600;
 }
 
-/* Description */
+/* Description text */
 .project-card p {
   font-size: 0.9rem;
-  color: #cbd5f5;
-  line-height: 1.5;
+  color: #4b5563;
+  line-height: 1.55;
 }
 
-/* Tech Stack */
+/* Tech Stack labels */
 .tech {
   display: block;
-  margin-top: 12px;
+  margin-top: 14px;
   font-size: 0.8rem;
-  color: #38bdf8;
+  color: #ff6a00;
   font-weight: 500;
 }

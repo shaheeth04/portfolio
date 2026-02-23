@@ -1,73 +1,165 @@
-.certification {
-  padding: 80px 20px;
-  background: #020617;
-  color: #e5e7eb;
+/* ============================================================
+   PROJECTS SECTION (Matching your gradient)
+   ============================================================ */
+.unique-proj-section {
+  padding: 90px 20px;
+  /* Starts at #f3ece5 and ends at #f7f4ef */
+  background: linear-gradient(
+    to bottom,
+    #f3ece5 0%,
+    #f7f4ef 100%
+  );
+  color: #1f2937;
   text-align: center;
 }
 
-/* Title */
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 50px;
-  color: #38bdf8;
+.unique-proj-title {
+  font-size: 2.1rem;
+  margin-bottom: 55px;
+  color: #ff6a00;
+  font-weight: 700;
 }
 
-/* GRID */
-.cert-container {
-  max-width: 1100px;
+.unique-proj-container {
+  max-width: 1200px;
   margin: auto;
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the 3rd card */
+  gap: 28px;
 }
 
-/* Card */
-.cert-card {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 12px;
+.unique-proj-card {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 14px;
   text-align: left;
-  position: relative;
-  transition: 0.25s ease;
-  border: 1px solid transparent;
+  border: 1px solid #e7e5e4;
+  flex: 1 1 320px; 
+  max-width: 400px; 
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.cert-card:hover {
+.unique-proj-card:hover {
   transform: translateY(-6px);
-  border-color: #38bdf8;
-  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+  border-color: #ff6a00;
+  box-shadow: 0 12px 30px rgba(255, 106, 0, 0.12);
 }
 
-/* Badge */
-.cert-badge {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: #38bdf8;
-  color: black;
-  font-size: 0.65rem;
-  padding: 4px 8px;
-  border-radius: 5px;
+.unique-proj-badge {
+  background: rgba(255, 106, 0, 0.12);
+  color: #ff6a00;
+  font-size: 0.72rem;
+  padding: 5px 9px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.unique-proj-card h3 {
+  margin-bottom: 10px;
+  color: #1f2937;
+  font-size: 1.05rem;
   font-weight: 600;
 }
 
-/* Title */
-.cert-card h3 {
-  margin-bottom: 8px;
-  color: #f1f5f9;
-}
-
-/* Issuer */
-.issuer {
+.unique-proj-card p {
   font-size: 0.9rem;
-  color: #cbd5f5;
-  margin-bottom: 6px;
+  color: #4b5563;
+  line-height: 1.55;
+  flex-grow: 1;
 }
 
-/* Year */
-.year {
+.unique-proj-tech {
+  display: block;
+  margin-top: 14px;
   font-size: 0.8rem;
-  color: #38bdf8;
+  color: #ff6a00;
   font-weight: 500;
+}
+
+/* ============================================================
+   CERTIFICATIONS SECTION (Seamless Transition)
+   ============================================================ */
+.unique-cert-section {
+  padding: 90px 20px;
+  /* Matches the EXACT end color of the Projects gradient */
+  background-color: #f7f4ef; 
+  color: #1f2937;
+  text-align: center;
+  /* Removed border-top to ensure no visible "jump" or line */
+  border-top: none; 
+}
+
+.unique-cert-title {
+  font-size: 2.1rem;
+  margin-bottom: 55px;
+  color: #ff6a00;
+  font-weight: 700;
+}
+
+.unique-cert-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the 5th card */
+  gap: 28px;
+}
+
+.unique-cert-card {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 14px;
+  text-align: left;
+  border: 1px solid #e7e5e4;
+  flex: 1 1 280px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.unique-cert-card:hover {
+  transform: translateY(-6px);
+  border-color: #ff6a00;
+  box-shadow: 0 12px 30px rgba(255, 106, 0, 0.12);
+}
+
+.unique-cert-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 106, 0, 0.12);
+  color: #ff6a00;
+  font-size: 0.65rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.unique-cert-card h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #111827;
+  padding-right: 50px;
+  font-weight: 600;
+}
+
+.unique-cert-issuer {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.unique-cert-year {
+  font-size: 0.85rem;
+  color: #ff6a00;
+  font-weight: 700;
 }

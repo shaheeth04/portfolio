@@ -1,49 +1,46 @@
+import React from "react";
 import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <footer className="unique-footer">
+      <div className="unique-footer-container">
         {/* LEFT */}
-        <div className="footer-left">
+        <div className="unique-footer-left">
           <h2>Shaheeth Hussain</h2>
-          <p>
-            Frontend Developer passionate about building clean and responsive
-            web experiences.
+         <p>
+            <strong>Java Backend Developer</strong> specialized in building robust 
+            server-side applications, with a strong foundation in modern 
+            Frontend technologies.
           </p>
         </div>
 
         {/* CENTER LINKS */}
-        <div className="footer-links">
+        <div className="unique-footer-links">
           <h4>Quick Links</h4>
           <a href="#home">Home</a>
-          <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </div>
 
         {/* RIGHT SOCIAL */}
-        <div className="footer-social">
+        <div className="unique-footer-social">
           <h4>Connect</h4>
-          <a href="https://linkedin.com/in/shaheeth-hussain/" target="_blank">
+          <a href="https://linkedin.com/in/shaheeth-hussain/" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
-          <a href="https://github.com/SHAHEEETH" target="_blank">
+          <a href="https://github.com/SHAHEEETH" target="_blank" rel="noreferrer">
             GitHub
           </a>
-          <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=shaheethhussain@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
->
-   Email Me
-</a>
+          <a href="mailto:shaheethhussain@gmail.com">
+            Email Me
+          </a>
         </div>
       </div>
 
       {/* BOTTOM */}
-      <div className="footer-bottom">
+      <div className="unique-footer-bottom">
         <p>
           © {new Date().getFullYear()} Shaheeth Hussain. All rights reserved.
         </p>

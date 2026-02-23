@@ -4,21 +4,107 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Full dark background */
-body {
-  background: #f8fafc;
-  font-family: system-ui, sans-serif;
+/* Theme Variables */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body {
-  font-family: 'Poppins', sans-serif;
+
+html {
+  scroll-behavior: smooth;
 }
+
+/* Theme Variables */
+:root {
+  --primary: #f97316;
+  --primary-dark: #ea580c;
+  --bg: #fff7ed;
+  --text: #1f2937;
+  --muted: #6b7280;
+}
+
+/* Base Styles */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Headings */
 h1, h2 {
   font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
 }
-:root {
-  --primary: #2563eb; /* blue */
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Base Styles */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+/* Target the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px;               /* Width of the vertical scrollbar */
+  background-color: #f3ece5; /* Matches your section background */
+}
+
+/* Target the track (the path the thumb slides on) */
+::-webkit-scrollbar-track {
+  background: #f7f4ef;       /* Subtle beige to match your flow */
+  border-left: 1px solid #e7e5e4;
+}
+
+/* Target the thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+  background-color: #ff6a00; /* Your signature Orange */
+  border-radius: 20px;       /* Makes it look modern and rounded */
+  border: 3px solid #f7f4ef; /* Creates a padding effect around the thumb */
+}
+
+/* Hover effect on the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e65f00; /* Slightly darker orange on hover */
+}
+
+/* For Firefox (Standard support) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff6a00 #f7f4ef;
 }

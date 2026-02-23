@@ -12,8 +12,7 @@ function Hero() {
           <h2>Software Developer</h2>
 
           <p>
-            I build clean, responsive, and user-friendly web applications using modern technologies like React and JavaScript, with a strong passion for creating beautiful UI and smooth user experiences. Alongside my frontend expertise, I am also a backend Java developer, where my main focus lies in designing robust server-side logic, APIs, and database interactions. This combination allows me to deliver end-to-end solutions that are both visually engaging and technically reliable.
-
+I am a backend-focused developer with strong skills in Java, APIs, and database-driven systems. I enjoy building reliable server-side logic and scalable backend solutions. Alongside backend development, I also create clean and responsive user interfaces using React and JavaScript. This combination helps me build complete, end-to-end web applications with both strong functionality and great user experience.
           </p>
 
           <div className="hero-buttons">

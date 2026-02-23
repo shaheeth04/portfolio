@@ -1,7 +1,6 @@
 .about {
-  padding: 80px 0;
-  background: #020617;
-  color: #e5e7eb;
+  padding: 90px 0;
+  background: #ffffff;
 }
 
 .about-container {
@@ -15,6 +14,7 @@
   flex-wrap: wrap;
 }
 
+/* LEFT TEXT */
 .about-text {
   flex: 1;
   min-width: 300px;
@@ -23,15 +23,17 @@
 .about-text h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
-  color: #38bdf8;
+  color: var(--primary);
 }
 
 .about-text p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-  color: #cbd5f5;
+  margin-bottom: 16px;
+  line-height: 1.7;
+  color: var(--muted);
+  font-size: 1.05rem;
 }
 
+/* RIGHT CARDS */
 .about-cards {
   flex: 1;
   min-width: 300px;
@@ -41,29 +43,31 @@
 }
 
 .card {
-  background: #1e293b;
+  background: #fff7ed;
   padding: 20px;
-  border-radius: 10px;
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  transition: 0.3s ease;
+  border-radius: 12px;
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  transition: 0.25s ease;
 }
 
 .card h3 {
   margin-bottom: 10px;
-  color: #38bdf8;
+  color: var(--primary);
+  font-size: 1.1rem;
 }
 
 .card p {
   font-size: 0.95rem;
-  color: #cbd5f5;
+  color: #374151;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  border-color: #38bdf8;
-  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 8px 18px rgba(249, 115, 22, 0.15);
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;

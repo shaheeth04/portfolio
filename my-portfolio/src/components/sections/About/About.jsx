@@ -9,36 +9,38 @@ function About() {
           <h2>About Me</h2>
 
           <p>
-            I am a passionate Computer Science student interested in software
-            development and problem solving.
+            I am a Computer Science student with a strong interest in backend
+            development and software engineering. I enjoy building reliable
+            server-side applications using Java and object-oriented principles.
           </p>
 
           <p>
-            I focus on Java, OOP concepts and frontend development using React.
-            I enjoy building responsive and user-friendly applications.
+            Alongside backend development, I also create clean and responsive
+            user interfaces using React and modern JavaScript. This allows me
+            to develop complete, end-to-end web applications.
           </p>
 
           <p>
-            Currently preparing for campus placements and aiming to grow as a
-            skilled Software Engineer.
+            Currently preparing for campus placements and continuously improving
+            my problem-solving skills and real-world development experience.
           </p>
         </div>
 
         <div className="about-cards">
           <div className="card">
             <h3>🎓 Education</h3>
-            <p>B.E CSE</p>
+            <p>B.E Computer Science</p>
             <p>Panimalar Engineering College</p>
           </div>
 
           <div className="card">
-            <h3>💻 Skills</h3>
-            <p>Java, OOPs, React, JavaScript</p>
+            <h3>💻 Core Skills</h3>
+            <p>Java, OOPs, REST APIs</p>
           </div>
 
           <div className="card">
             <h3>🚀 Goal</h3>
-            <p>To become a Software Engineer</p>
+            <p>Backend Software Engineer</p>
           </div>
 
           <div className="card">

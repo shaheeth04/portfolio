@@ -1,12 +1,12 @@
-.footer {
-  background: #020617;
-  color: #cbd5f5;
-  border-top: 1px solid #1e293b;
-  margin-top: 0;   /* FIXED */
+.unique-footer {
+  background: #f7f4ef; /* Matches the bottom of your Contact section */
+  color: #1f2937;
+  border-top: 1px solid #e7e5e4;
+  padding-top: 40px;
 }
 
 /* Container */
-.footer-container {
+.unique-footer-container {
   width: 90%;
   max-width: 1100px;
   margin: auto;
@@ -17,63 +17,77 @@
 }
 
 /* LEFT */
-.footer-left h2 {
-  color: #38bdf8;
-  margin-bottom: 10px;
+.unique-footer-left h2 {
+  color: #ff6a00; /* Theme Orange */
+  margin-bottom: 15px;
+  font-size: 1.8rem;
 }
 
-.footer-left p {
+.unique-footer-left p {
   max-width: 300px;
   line-height: 1.6;
+  color: #4b5563;
 }
 
-/* LINKS */
-.footer-links,
-.footer-social {
+/* LINKS & SOCIALS */
+.unique-footer-links,
+.unique-footer-social {
   display: flex;
   flex-direction: column;
 }
 
-.footer-links h4,
-.footer-social h4 {
-  color: #38bdf8;
-  margin-bottom: 10px;
+.unique-footer-links h4,
+.unique-footer-social h4 {
+  color: #111827;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
-.footer a {
+.unique-footer a {
   text-decoration: none;
-  color: #cbd5f5;
-  margin-bottom: 6px;
+  color: #4b5563;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
   transition: 0.25s;
+  width: fit-content;
 }
 
-.footer a:hover {
-  color: #38bdf8;
-  transform: translateX(4px);
+.unique-footer a:hover {
+  color: #ff6a00;
+  transform: translateX(5px);
 }
 
 /* BOTTOM */
-.footer-bottom {
+.unique-footer-bottom {
   text-align: center;
-  padding: 15px 0;
-  border-top: 1px solid #1e293b;
-  font-size: 0.9rem;
-  color: #94a3b8;
+  padding: 25px 0;
+  border-top: 1px solid #e7e5e4;
+  font-size: 0.85rem;
+  color: #6b7280;
 }
 
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .footer-container {
+  .unique-footer-container {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    gap: 50px;
   }
 
-  .footer-left p {
+  .unique-footer-left p {
     max-width: 100%;
   }
 
-  .footer a:hover {
+  .unique-footer a:hover {
     transform: none;
+  }
+  
+  .unique-footer-links,
+  .unique-footer-social {
+    align-items: center;
   }
 }
